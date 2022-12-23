@@ -42,13 +42,15 @@ public class Mail {
                 return "Human resources";
             default:
                 return "No department.";
-
         }
-
     }
 
     //generate random password
-
+    private String randoPassword(int length)
+    {
+        String pwSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%";
+        char[] pw = new char[length];
+    }
     //set the inbox capacity
 
     //set and set al email
