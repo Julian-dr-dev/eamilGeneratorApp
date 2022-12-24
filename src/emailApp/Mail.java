@@ -50,6 +50,12 @@ public class Mail {
     {
         String pwSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%";
         char[] pw = new char[length];
+
+        for (int i = 0; i < length; i++) {
+            int rand = (int) (Math.random() * pwSet.length());
+            pw[i] = pwSet.charAt(rand);
+        }
+        return new String(pw);
     }
     //set the inbox capacity
 
